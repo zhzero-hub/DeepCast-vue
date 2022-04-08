@@ -10,8 +10,8 @@
     router>
     <el-menu-item index="SystemController">训练控制台</el-menu-item>
     <el-menu-item index="ServiceController">服务中心</el-menu-item>
-    <el-menu-item index="3" disabled>消息中心</el-menu-item>
-    <el-menu-item index="4">订单管理</el-menu-item>
+    <el-menu-item index="PlayerController">播放中心</el-menu-item>
+    <el-menu-item index="4">效率分析</el-menu-item>
   </el-menu>
 </template>
 

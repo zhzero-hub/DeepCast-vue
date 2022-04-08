@@ -1,8 +1,11 @@
 <template>
   <div>
+    <div style="font-weight: bold; font-size: 90%; padding-bottom: 1%">
+      待决策 / 已分配
+    </div>
     <el-row>
       <el-col :span="11">
-        <el-card class="box-card">
+        <el-card class="box-card" v-if="this.userInfoData.length !== 0">
           <div v-for="(item, index) in this.userInfoData" :key="index" style="padding-bottom: 2%">
             <el-descriptions class="margin-top" title="待决策" :column="2" :size="size" border>
               <el-descriptions-item>
@@ -38,7 +41,7 @@
         </el-card>
       </el-col>
       <el-col :span="11" :offset="2">
-        <el-card class="box-card">
+        <el-card class="box-card" v-if="this.solvedInfoData.length !== 0">
           <div v-for="(item, index) in this.solvedInfoData" :key="index" style="padding-bottom: 2%">
             <el-descriptions class="margin-top" title="已分配" :column="3" :size="size" border>
               <el-descriptions-item>

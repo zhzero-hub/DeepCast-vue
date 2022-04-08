@@ -6,19 +6,22 @@
       </el-header>
       <el-main>
         <router-view></router-view>
-        <h1>Main</h1>
       </el-main>
-      <el-footer>Footer</el-footer>
+      <el-footer>
+        <MainFooter></MainFooter>
+      </el-footer>
     </el-container>
   </div>
 </template>
 
 <script>
 import MainHeader from '@/components/MainHeader'
+import MainFooter from '@/components/MainFooter'
 
 export default {
   components: {
-    MainHeader
+    MainHeader,
+    MainFooter
   }
 }
 </script>

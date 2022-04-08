@@ -22,6 +22,11 @@ const routes = [
     path: '/ServiceController',
     name: 'SystemController',
     component: () => import('../components/service/ServiceController')
+  },
+  {
+    path: '/PlayerController',
+    name: 'PlayerController',
+    component: () => import('../components/player/PlayerController')
   }
 ]
 
